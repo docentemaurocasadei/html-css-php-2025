@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1 title="suggerimento sul titolo">Lezione 2</h1>
+    <h1 id="titoli" title="suggerimento sul titolo">Lezione 2</h1>
     <div title="sono all'interno del div">questo è il contenuto</div>
     <span style="color: hsl(248, 40%, 55%);">ciao</span>
     <p>
@@ -22,7 +22,8 @@ testo    preformattato
 con spazi e ritorni a capo
 mantenuti
     </pre>
-    <article>
+
+    <article id="articolo">
         <h2>titolo articolo</h2>
         <h3>sottotitolo della prima notizia</h3>
         <p>la notizia parla di <strong>cucina vegana</strong> e come <b>cucinare</b> <em>piatti vegani</em> e dove trovare ingredienti adatti.</p>
@@ -37,7 +38,7 @@ mantenuti
         <h3>con un importo   &lt; da &gt;   1,00 </h3> 
         <p>La formula dell'acqua è H<sub>2</sub>O e non H<super>2</super>O</p>
     </article>
-    <h2>le liste</h2>
+    <h2 id="liste">le liste</h2>
     <h3>lista non ordinata</h3>
     <ul>
         <li>elemento 1</li>
@@ -60,7 +61,7 @@ mantenuti
         </li>
         <li>elemento 3</li>
     </ol>
-    <h2>Le Tabelle</h2>
+    <h2 id="tabelle">Le Tabelle</h2>
     <table border="1">
         <!-- la caption è facoltatitiva ma se c'è va subito dopo il tag table -->
         <caption>Tabella dei partecipanti al corso</caption> 
@@ -99,7 +100,54 @@ mantenuti
             </tr>
         </tfoot>
     </table>
-        
-    
+    <h2>I link</h2>
+    <a href="https://google.it">Google</a>
+    <!-- 
+        / fa riferimento alla radice del sito
+        ./ fa riferimento alla cartella corrente
+        ../ fa riferimento alla cartella superiore
+    -->
+    <ul>
+        <li>
+            <!-- radice   -->
+            <a href="/lezione1/lezione1.html">Lezione 1</a>
+            <!-- cartella precedente -->
+            <a href="../lezione1/lezione1.html">Lezione 1</a>
+            <!-- cartella corrente -->
+            <a href="./favicon.ico">Scarica Icona</a>
+            <a href="favicon.ico">Scarica Icona</a>
+        </li>
+    </ul>
+    <nav>
+        <ul>
+            <li>
+                <a href="#titoli">Titoli</a>
+            </li>
+            <li><a href="#liste">Liste</a></li>
+            <li><a href="#tabelle">Tabelle</a></li>
+            <li><a href="#articolo">Articolo</a></li>
+        </ul>
+    </nav>
+    <h2 id="contatti">Contatti</h2>
+    <!-- prefissi al percorso per telefono, email, chat ..
+    mailto: invia una email
+    tel: esegue la chiamata telefonica
+    t.me: apre la chat di telegram
+    wa.me: apre la chat di whatsapp
+    target="_blank" per aprire in una nuova scheda
+    -->
+    <a target="_blank" href="mailto:info@formart.it">info formart.it</a>
+    <a target="_blank" href="tel:+390541123456">+39 0541 123456</a>
+    <a target="_blank" href="https://t.me/formart">Chat Telegram</a>
+    <a target="_blank" href="https://wa.me/390541123456">Chat WhatsApp</a>
+
+    <h2>Immagini</h2>
+    <img src="./images/cascata.jpg" alt="Cascata" width="200">
+    <img src="images/montagne.jpg" alt="Montagne" width="200">
+    <img src="./images/palme.jpg" alt="Palme" width="200">
+
+    <a href="https://yahoo.com">
+        <img src="images/yahoo_logo.png" alt="Yahoo Logo" title="Vai a Yahoo">
+    </a>
 </body>
 </html>

@@ -1,0 +1,53 @@
+Esercizio HTML – Tema: La città di Rimini
+
+Realizza una pagina HTML dedicata alla città di Rimini, inserendo tutti gli elementi elencati di seguito.
+La pagina deve essere:
+strutturata correttamente (doctype, head, body)
+leggibile e organizzata e codice indentato correttamente
+
+Obiettivo
+Creare un file index.html strutturato correttamente, utilizzando i principali tag HTML.
+
+Istruzioni
+All’interno della pagina devi includere:
+
+1. Un titolo e sottotitoli
+Utilizza i tag <h1>, <h2>, <h3> per creare una gerarchia di titoli, ad esempio:
+<h1> con il titolo principale “Rimini: guida alla città”
+<h2> per sezioni come “Storia”, “Cosa vedere”, ecc.
+
+2. Una sezione <article>
+Crea 3 <article> che contengano un testo descrittivo sulla città, per esempio:
+storia
+curiosità
+eventi principali
+
+3. Una lista non ordinata (<ul>)
+Ad esempio, con:
+monumenti importanti
+piatti tipici
+quartieri popolari
+
+4. Una lista ordinata (<ol>)
+Ad esempio:
+tappe consigliate in un itinerario
+prime 5 attrazioni da visitare
+
+5. Una tabella (<table>)
+Inserisci una tabella con almeno 3 colonne e 3 righe.
+Esempi:
+Attrazione	Tipo	Orario
+Arco di Augusto	Monumento	Sempre aperto
+Ponte di Tiberio	Storico	Sempre aperto
+
+6. almeno 2 link (<a>)
+Aggiungi almeno un link:
+assoluto, es. al sito del Comune di Rimini
+
+relativo, es. a un'immagine o a un’altra pagina che devi creare tu (es: storia.html)
+7. Un’immagine (<img>)
+
+Inserisci almeno 2 immagini:
+una con percorso assoluto (URL online)
+una con percorso relativo (immagine salvata nella cartella img/)
+
