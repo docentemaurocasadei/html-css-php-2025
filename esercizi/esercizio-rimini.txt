@@ -45,8 +45,8 @@ Aggiungi almeno un link:
 assoluto, es. al sito del Comune di Rimini
 
 relativo, es. a un'immagine o a un’altra pagina che devi creare tu (es: storia.html)
-7. Un’immagine (<img>)
 
+7. Un’immagine (<img>)
 Inserisci almeno 2 immagini:
 una con percorso assoluto (URL online)
 una con percorso relativo (immagine salvata nella cartella img/)
