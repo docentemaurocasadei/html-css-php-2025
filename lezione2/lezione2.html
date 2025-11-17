@@ -50,7 +50,7 @@ mantenuti
         <li>elemento 3</li>
     </ul>
     <h3>lista ordinata</h3>
-    <ol>
+    <ol style="list-style-type:lower-alpha">
         <li>elemento 1</li>
         <li>elemento 2
             <ol>
@@ -60,5 +60,46 @@ mantenuti
         </li>
         <li>elemento 3</li>
     </ol>
+    <h2>Le Tabelle</h2>
+    <table border="1">
+        <!-- la caption è facoltatitiva ma se c'è va subito dopo il tag table -->
+        <caption>Tabella dei partecipanti al corso</caption> 
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Età</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mario</td>
+                <td>Rossi</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Giovanni</td>
+                <td>Bianchi</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Silvia</td>
+                <td>Verdi</td>
+                <td rowspan="2">28</td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+                <td>Neri</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Totale partecipanti</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+        
+    
 </body>
 </html>
