@@ -1,0 +1,35 @@
+/* Mobile first: stili base validi per tutti */
+h1, h2 {
+    color: #9dbe6d; 
+}
+a{
+    font-weight: 900;
+}
+a.menu{
+    font-weight: bold;
+    color: deeppink !important;
+}
+.menu{
+    color: aqua !important;
+}
+.policy{
+    font-style: italic;
+    font-weight: normal;
+}
+#home{
+    font-weight: 900;
+    color: pink;
+}
+/* ≥ 576px (small devices) */
+@media (min-width: 576px) {
+    h1, h2 {
+        color: rgb(96, 166, 96); 
+    }
+}
+
+/* ≥ 992px (extra-large devices) */
+@media (min-width: 992px) {
+    h1, h2 {
+        color: rgb(57, 101, 57); 
+    }
+}

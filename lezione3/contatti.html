@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* h1 {
+            color: white; 
+            background-color:#cc0000;
+        } */
+    </style>
+</head>
+<body>
+    <h1 style="color: red;">Registrati</h1>
+    <h2>input text</h2>
+    <h2>texarea</h2>
+    <h2>button</h2>
+    <form action="invia-mail-contatti.php" method="get" 
+    name="contatto" enctype="multipart/form-data">
+        <!-- metodi
+        GET: i dati del form sono visibili nell'URL
+        POST: i dati del form non sono visibili nell'URL 
+        -- PUT, PATCH, DELETE sono usati per API RESTful 
+        -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" size="100"
+        required placeholder="Inserisci la tua email">
+        <br><br>
+        <label for="messaggio">Messaggio:</label>
+        <br>
+        <textarea id="messaggio" name="messaggio" rows="5" cols="30" required placeholder="Scrivi il tuo messaggio qui"></textarea>
+        <br><br>
+        <h3>Sport Preferito (anche più di uno)</h3>
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" name="tennis" id="tennis">
+        <label for="calcio">Calcio</label>
+        <input type="checkbox" name="calcio" id="calcio">
+        <label for="basket">Basket</label>
+        <input type="checkbox" name="basket" id="basket">
+        <br><br>
+        <h3>Genere</h3>
+        <input type="radio" name="genere" id="maschio" value="maschio">
+        <label for="maschio">Maschio</label>
+        <input type="radio" name="genere" id="femmina" value="femmina">
+        <label for="femmina">Femmina</label>
+        <input type="radio" name="genere" id="altro" value="altro">
+        <label for="altro">Altro</label>
+        <br><br>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+        <br><br>
+        <label for="allegato">Allegato</label>
+        <input type="file" id="allegato" name="allegato">
+        <br><br>
+        <label for="colore-preferito">Colore Preferito:</label>
+        <input type="color" id="colore-preferito" name="colore-preferito">
+        <br><br>
+        <input type="hidden" name="id-utente" value="12345">
+        <br>
+        <label for="anno-di-nascita">Anno di Nascita:</label>
+        <input type="number" id="anno-di-nascita" disabled
+        name="anno-di-nascita" min="1900" max="2025" value="2000">
+        <br><br>
+        <label for="soddisfazione">Soddisfazione:</label>
+        <input type="range" id="soddisfazione" name="soddisfazione" min="0" max="10" value="9">
+        <br><br>
+        <label for="marchio-preferito">Marchio Preferito:</label>
+        <select name="marchio-preferito" id="marchio-preferito">
+            <optgroup label="Marchi Sportivi">
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+                <option value="puma">Puma</option>
+                <option value="reebok">Reebok</option>
+            </optgroup>
+            <optgroup label="Marchi Casual">
+                <option value="levi's">Levi's</option>
+                <option value="gap">Gap</option>
+            </optgroup>
+        </select>
+        <!-- <input type="submit" value="Invia"> -->
+         <button type="submit">
+            <img src="../lezione2/images/montagne.jpg" alt="" width="150">
+         </button>
+        <input type="reset" value="Pulisci">
+    </form>
+    <form action="accedi">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Inserisci la tua password">
+        <br><br>
+        <input type="submit" value="Accedi">
+    </form>
+</body>
+</html>
