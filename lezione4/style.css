@@ -109,9 +109,10 @@ section#secondo-piano div {
     }
     section#secondo-piano {
         flex-direction: row;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     section#secondo-piano div {
-        width: 33%;
+        width: 33.1%;
     }
 }
