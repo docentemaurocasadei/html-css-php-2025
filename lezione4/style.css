@@ -89,8 +89,29 @@ li[data-evidenza="rosso"] {
     color: red;
     font-weight: bold;
 }
+
+/* secondo piano*/
+section#secondo-piano {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+section#secondo-piano div {
+    width: 100%;
+    min-height: 10rem;
+    border: 1px solid black;
+    text-align: center;
+}
 @media screen and (min-width: 576px) {
     section#primo-piano > article {
         width: 47%;
+    }
+    section#secondo-piano {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section#secondo-piano div {
+        width: 33%;
     }
 }
