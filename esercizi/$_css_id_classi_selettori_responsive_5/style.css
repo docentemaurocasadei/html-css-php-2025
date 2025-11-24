@@ -67,6 +67,7 @@ section#servizi > article {
     box-sizing: border-box;
     vertical-align: top;
     font-size: initial;
+    text-align: center;
 }
 
 h2 {
@@ -78,7 +79,12 @@ p span[data-evidenza="giallo"] {
     background-color: var(--colore-accento);
     font-weight: bold;
 }
-
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 /* ===================
    Layout responsive
 =================== */
