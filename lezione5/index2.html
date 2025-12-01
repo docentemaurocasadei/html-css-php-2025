@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style2.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Delta Informatica</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Notizia 1</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Scopri di Più</a>
+                        <a href="#" class="btn btn-info">Scopri di Più</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Notizia 2</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Scopri di Più</a>
+                        <a href="#" class="btn btn-info">Scopri di Più</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Notizia 3</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Scopri di Più</a>
+                        <a href="#" class="btn btn-info">Scopri di Più</a>
                     </div>
                 </div>
             </div>
@@ -82,16 +82,27 @@
     </section>
     <footer class="container-fluid mt-4 mt-md-5 bg-dark text-light">
         <div class="row">
-            <div id="footer-logo">
+            <!-- 
+                d-flex: attiva il flexbox
+                flex-column: imposta la direzione degli elementi in colonna
+                align-items-center: centra gli elementi orizzontalmente
+                align-items-md-start: allinea gli elementi a sinistra a partire da md
+            -->
+            <div id="footer-logo" class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start">
                 <img src="./images/logo.png" alt="Logo Delta Informatica">
                 <p>Il tuo partner tecnologico di fiducia</p>
             </div>
-            <div id="footer-vuoto"></div>
-            <div id="footer-nav">
-                <a href="#privacy-policy">Privacy Policy</a>
-                <a href="#cookie-policy">Cookie Policy</a>
-                <a href="#whistleblowing">Whistleblowing</a>
+            <div id="footer-vuoto" class="col-12 col-md-4"></div>
+            <div id="footer-nav" class="col-12 col-md-4 d-flex flex-column align-items-center pt-5">
+                <a href="#privacy-policy" class="text-light">Privacy Policy</a>
+                <a href="#cookie-policy" class="text-light">Cookie Policy</a>
+                <a href="#whistleblowing" class="text-light">Whistleblowing</a>
             </div> 
+        </div>
+        <div class="row bg-info">
+            <div class="col-12">
+                <p class="text-center py-3 mb-0 text-dark">© Copyright 2025 Delta Informatica - Tutti i diritti riservati</p>
+            </div>
         </div>
         <!-- 2 righe
          riga 1: 
