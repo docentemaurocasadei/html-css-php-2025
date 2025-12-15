@@ -65,9 +65,44 @@
             //- se scontato: "Il prodotto è in offerta ad € *****! (prezzo precedente: € ***** [barrato])"
             //- se non scontato: "Il prodotto è in vendita ad € *****!"
     ?>
+    <h2>Il ciclo FOR</h2>
+    <?php 
+    $listaIscritti=[
+        "Mario Rossi", 
+        "Luigi Verdi", 
+        "Silvia Bianchi", 
+        "Anna Neri", 
+        "Paolo Gialli"
+    ];
+    echo "<h3>Elenco Iscritti:</h3>";
+    $numeroIscritti = count($listaIscritti);
+    for ($i=0; $i < $numeroIscritti; $i++) { 
+        echo stampaIscritto($listaIscritti[$i]);
+    }
+    ?>
+    <h2>Il ciclo FOREACH</h2>
+    <?php
+    echo "<h3>Elenco Iscritti 2:</h3>";
+    foreach ($listaIscritti as $iscritto) {
+        echo stampaIscritto($iscritto);
+    }
+    // echo stampaIscritto($listaIscritti[0]);
+    // echo stampaIscritto($listaIscritti[1]);
+    // echo stampaIscritto($listaIscritti[2]);
+    // echo stampaIscritto($listaIscritti[3]);
+    // echo stampaIscritto($listaIscritti[4]);
+    ?>
 </body>
 </html>
 <?php
+function stampaIscritto(string $nomeIscritto): string {
+    $card = "<div class='card my-2'>
+                <div class='card-body'>
+                    <p class='card-text'>$nomeIscritto</p>
+                </div>
+            </div>";
+        return $card;
+}
 function inserisciCardBootstrap(string $titolo, string $testo) {
     $card = <<<DATA
         <div class="card" style="width: 18rem;">
