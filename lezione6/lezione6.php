@@ -57,9 +57,9 @@
     //float
     $float = 15.89; //numero con la virgola
     $prezzoProdotto = 5.45; //numero con la virgola 
-
+    $ciao = "mondo";
     //stringa
-    $stringa = "Ciao sono una stringa"; //stringa
+    $stringa = "Ciao sono una stringa che vale: $ciao "; //stringa
     $nomeUtente = 'Mario Rossi'; //stringa
     $contenuto = "Questo è il contenuto del mio
     articolo che va su più
